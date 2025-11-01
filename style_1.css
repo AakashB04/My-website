@@ -1,0 +1,206 @@
+body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      line-height: 1.6;
+      text-align: center;
+    }
+    
+.project-title {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  background: linear-gradient(to right,#831bcd,#f9620b);
+  color:#ffffff;
+}
+
+    h1, h2 {
+      font-weight: 700;
+    }
+
+    p {
+      font-weight: 400;
+      background: linear-gradient(to right, #831bcd, #f9620b);
+      color:#ffffff;
+      
+    }
+
+    a {
+      color: #007bff;
+      
+    }
+
+    a:hover {
+      color: #0056b3;
+      
+    }
+
+    header,footer {
+      background: linear-gradient(to right, #831bcd, #f9620b);
+      color: #ffffff;
+      padding: 40px 0px;
+    }
+
+  footer-box{
+   max-height: 600px;
+   margin: 0 auto;
+   background-color: rgba(255, 255, 255, 0.05);
+   padding: 10px;
+   border-radius: 10px;
+}
+
+   
+
+    .project-typewriter {
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+      margin: 0;
+      color: white;
+      padding: 0px;
+      display: inline-block;
+    }
+
+    .project-typewriter::after {
+      position: absolute;
+      margin-left: 5px;
+      animation: blink 0.7s infinite;
+    }
+
+    @keyframes blink {
+      0%, 50%, 100% { opacity: 1; }
+     25%, 50% { opacity: 0; }
+    }
+    
+.main-heading {
+  font-size: 28px;
+  text-align: center;
+  background: linear-gradient(to right , #831bcd,#f9620b);
+  padding: 12px;
+  border-radius: 10px;
+  color: white;
+}
+
+.static-white {
+  color: white;
+}
+
+.project-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+   max-width: 1000px;
+   margin: 40px auto;
+   padding: 20px;
+   flex-wrap: wrap;
+}
+
+.project-text {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+
+.project-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  animation: bouneUpDown 8s 20px rgba(0,0,0,0.2);
+}
+
+@keyframes bounceUpDown {
+  0% , 100%{
+    transform: translateY(0px);
+  }
+  50% {
+    transform: rotate(-10px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-text {
+    text-align: center;
+  }
+}
+
+/* CSS for Dark Mode */
+.dark-mode {
+  background-color: #333;
+  color: #ffffff;
+}
+
+.dark-mode button {
+  background-color: #555;
+  color: #ffffff;
+}
+
+.dark-mode p {
+  color: #ffffff;
+}
+
+.dark-mode section,
+.dark-mode .form-container,
+.dark-mode .skills-list,
+.dark-mode .skills-section,
+.dark-mode .contact-section,
+.dark-mode .footer-box {
+  background-color: #222 !important;
+  color: #fff !important;
+}
+
+.dark-mode .skills-section p,
+.dark-mode .contact-section p,
+.dark-mode .skills-list span {
+  color: #fff !important;
+}
+
+.dark-mode textarea {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #888;
+}
+
+.dark-mode hr {
+  border-color: #777;
+}
+
+.dark-mode .container {
+  background-color: #1e1e1e;
+}
+
+.dark-mode h1,
+.dark-mode h2 {
+  background: linear-gradient(to right, #f9620b, #831bcd);
+  color: #ffffff;
+}
+
+.dark-mode summary {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+.dark-mode p {
+  background: linear-gradient(to right,  rgb(0, 157, 255), rgb(238, 192, 255));
+  color: #ffffff;
+}
+
+.dark-mode .download-btn {
+  background: linear-gradient(to right, #f9620b, #831bcd);
+  color: #ffffff;
+}
+
+.pdf-viewer {
+  width: 100%;
+  height: 600px;
+  border: none;
+  margin-top: 20px;
+    }

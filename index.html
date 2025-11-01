@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aakash Personal Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="script.js" defer></script>
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>AOS.init();</script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    h1, h2 {
+      font-weight: 700;
+    }
+
+    p {
+      font-weight: 400;
+      background: linear-gradient(to right, #831bcd, #f9620b);
+      color:#ffffff;
+      
+    }
+
+    a {
+      color: #007bff;
+      
+    }
+
+    a:hover {
+      color: #0056b3;
+      
+    }
+
+    header {
+      background: linear-gradient(to right, #831bcd, #f9620b);
+      color: #ffffff;
+      padding: 40px 0px;
+    }
+
+    footer {
+      background-color: #0ff39c;
+      padding: 20px 0px;
+    }
+
+    img{
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>This is Aakash, a <span class="about-me"></span></h1>
+    Welcome to my World
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I am Aakash Belgaonkar, a tech enthusiast currently serving as the Chairperson of IETE-DBIT-ISF. I was the Technical Coordinator for IETE-ISF in 2024 and previously led as the Student Coordinator Head for the Domain Maths Club. 
+    With a strong interest in electronics, embedded systems, and AIML, I am passionate about combining innovation with student leadership and hands-on projects.</p>
+    
+    <h2>Degree</h2>
+    <p>B.E in Electronics and Telecommunication & Minor in AIML</p>
+    <img src="images/Aakash_image.jpg" alt="Aakash's Photo" />
+  </section>
+<hr>
+  
+  <section class="skills-section">
+    <h2>Technical Skills</h2>
+    <div class="skills-list">
+    <span>Embedded System</span>
+    <span>Web Development</span>
+    <span>Data Analytics</span>
+   </p>
+   </div>
+  </section> <hr>
+
+  <section class="horizontal-scroll">
+    <div class="icon-container">
+    <img src="Icons/HTML.webp" alt="HTML">
+    <img src="Icons/CSS.webp" alt="CSS">
+    <img src="Icons/JavaScript.webp" alt="JavaScript">
+    <img src="Icons/java.webp" alt="Java">
+    <img src="Icons/python.webp" alt="Python">
+    <img src="Icons/arduino.webp" alt="Arduino">
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact Me</h2>
+    <div class="form-container">
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email"><br><br>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea><br><br>
+      
+      <button type="submit">Send</button>
+    </form>
+   </div>
+ </section>
+
+ <section id="programming-languages">
+  <h2>Programming Languages</h2>
+  <div class="skill">
+    <ul>JavaScript</ul>
+    <div class="progress-bar" data-progress="60"></div>
+  </div>
+  <div class="skill">
+    <ul>HTML</ul>
+    <div class="progress-bar" data-progress="40"></div>
+  </div>
+  <div class="skill">
+    <ul>CSS</ul>
+    <div class="progress-bar" data-progress="50"></div>
+  </div>
+
+ </section> <hr>
+
+  <section style="padding: 40px; text-align: center;">
+  <h2 style="font-size: 28px; margin-bottom: 30px;">My Projects</h2>
+  
+  <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+    
+    <!-- Project 1 -->
+    <div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease;" 
+         onmouseover="this.style.transform='scale(1.05)'" 
+         onmouseout="this.style.transform='scale(1)'">
+      <img src="Project/Breadboard_Implementation.jpg" alt="Emergency Response Beacon" style="width: 100%; height: 180px; object-fit: cover; border-radius: 0px;">
+      <div style="padding: 15px;">
+        <h3>Emergency Response Beacon</h3>
+        <p style="font-size: 14px;">Simple LED-based emergency signal system using IC 555 and 4017.</p>
+        <a href="project_css.html" 
+           style="display: inline-block; margin-top: 10px; padding: 8px 16px; background: #831bcd; color: white; text-decoration: none; border-radius: 0px;">
+          Know More
+        </a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease;" 
+         onmouseover="this.style.transform='scale(1.05)'" 
+         onmouseout="this.style.transform='scale(1)'">
+      <img src="Project/Indoor Survillence Bot.jpg" alt="Indoor Surveillance Bot" style="width: 100%; height: 180px; object-fit: cover; border-radius: 0px;">
+      <div style="padding: 15px;">
+        <h3>Indoor Surveillance Bot</h3>
+        <p style="font-size: 14px;">Security robot with sensors and camera for indoor monitoring.</p>
+        <a href="project_css.html" 
+           style="display: inline-block; margin-top: 10px; padding: 8px 16px; background: #831bcd; color: white; text-decoration: none; border-radius: 0px;">
+          Know More
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact-section">
+  <h2>Contact Information</h2>
+  <h4>Let's Connect!</h4>
+  <div class="social-icons">
+    <a href="https://linkedin.com/in/aakashbelgaonkar" target="_blank" class="icon linkedin">
+      <i class="fab fa-linkedin fa-2x linkedin-icon"></i>
+    </a> 
+    
+    <a href="mailto:aakashbelgaonkar.dbit@gmail.com" class="icon gmail">
+      <i class="fas fa-envelope fa-2x gmail-icon"></i>
+    </a>
+  </div>
+</section>
+<hr>
+
+
+
+  <footer>
+    <div class="footer-box">
+    &copy; 2025 Aakash. Built by @@kashBelgaonkar06
+    </div>
+  </footer>
+
+  <div id="dark-mode-toggle" class="dark-mode-toggle">
+    <i class="fas fa-moon"></i>
+       </div>
+      </body>
+    </html>

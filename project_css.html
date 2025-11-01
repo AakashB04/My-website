@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Projects</title>
+  <link rel="stylesheet" href="style_1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="project.js" defer></script>
+  <style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+  }
+
+  h1, h2 {
+    background: linear-gradient(to right, #831bcd, #f9620b);
+    text-align: center;
+    text-decoration: none;
+  }
+
+  img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+
+  .pdf-viewer {
+    width: 100%;
+    height: 600px;
+    border: none;
+    margin-top: 20px;
+  }
+
+  button.download-btn {
+    background: linear-gradient(to right, #831bcd, #f9620b);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 15px auto;
+    display: block;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  details {
+    margin: 20px 0;
+  }
+
+  p {
+    background: linear-gradient(to right, rgb(0, 157, 255), rgb(238, 192, 255));
+    padding: 10px;
+    border-radius: 8px;
+    color: black;
+  }
+
+  summary {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 6px;
+  }
+
+  #dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000;
+    color: black;
+  }
+</style>
+
+</head>
+<body>
+
+<div id="dark-mode-toggle" class="dark-mode-toggle">
+  <i class="fas fa-moon"></i>
+</div>
+
+<div class="container">
+  <h2 class="main-heading">
+    This is Aakash's,<span class="project-typewriter"></span>
+  </h2>
+</div>
+
+
+  <!-- Emergency Response Beacon -->
+  <details open>
+    <summary>Emergency Response Beacon</summary>
+    <p>
+      An Emergency Response Beacon using IC 555 and IC 4017 is a simple flashing LED circuit for signaling in emergencies. 
+      The IC 555 generates clock pulses, which the IC 4017 decade counter uses to sequentially light up LEDs, creating a rotating or flashing effect. 
+      It is useful for rescue signals, roadside warnings, and security alerts.
+    </p>
+    <h3>Breadboard Implementation</h3>
+    <img src="Project/Breadboard_Implementation.jpg" alt="Breadboard Implementation">
+
+    <h3>Circuit Diagram</h3>
+    <img src="Project/LED Flasher Circuit.jpg" alt="Circuit Diagram">
+
+    <h3>PCB Layout</h3>
+    <img src="Project/PCB layout of LED FLASHER.jpg" alt="PCB Layout">
+
+    <button class="download-btn" onclick="window.open('reports/Emergency Response Beacon.pdf')">Download Project Report</button>
+  </details>
+
+  <!-- Indoor Surveillance Bot -->
+  <details>
+    <summary>Indoor Surveillance Bot</summary>
+    <p>
+      The Indoor Surveillance Bot is a smart robotic system built using an 
+      Arduino Mega and programmed in Embedded C via the Arduino IDE. It uses a 
+      PIR sensor for motion detection, an ultrasonic sensor for obstacle 
+      avoidance, a Bluetooth module for wireless control, stepper motors
+      for movement, and a relay module to control external devices. 
+      This bot enhances indoor security by detecting intrusions, navigating spaces 
+      safely, and allowing remote operation. Measures temperature and humidity to 
+      monitor indoor climate in real-time. Camera Module Captures live visuals, enhancing 
+      the bot’s surveillance and remote monitoring capabilities.
+    </p>
+
+    <h3>Bot Image</h3>
+    <img src="Project/Indoor Survillence Bot.jpg" alt="Indoor Survillence Bot" width="400" height="400">
+    <h3>Circuit Diagram</h3>
+    <img src="Project/circuit diagram sem_04.jpg" alt="Circuit diagram of Bot ">
+    <button class="download-btn" onclick="window.open('reports/Indoor_Survillance_bot.pdf')">Download Project Report</button>
+  </details>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+    const icon = darkModeToggle.querySelector('i');
+
+    darkModeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+
+      // Toggle between moon and sun icons
+      if (body.classList.contains('dark-mode')) {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      } else {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+      }
+    });
+  });
+</script>
+
+<footer>
+    <div class="footer-box">
+    &copy; 2025 Aakash. Built by @@kashBelgaonkar06
+    </div>
+  </footer>
+
+</body>
+</html>
